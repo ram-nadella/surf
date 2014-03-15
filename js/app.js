@@ -1,5 +1,3 @@
-document.write('node ' + process.version);
-
 $digOutput = $('#digOutput');
 $nsOutput = $('#nsOutput');
 

@@ -1,9 +1,9 @@
 {
-    "name": "node-webkit-test-app",
+    "name": "surf",
     "version": "0.0.1",
     "main": "index.html",
     "window": {
-        "title": "Hyro",
+        "title": "Surf",
         "icon": "icons/beach-sit-icon.png",
         "toolbar": false,
         "frame": true,
