@@ -1,0 +1,20 @@
+{
+    "name": "node-webkit-test-app",
+    "version": "0.0.1",
+    "main": "index.html",
+    "window": {
+        "title": "Hyro",
+        "icon": "icons/beach-sit-icon.png",
+        "toolbar": false,
+        "frame": true,
+        "show": true,
+        "width": 1000,
+        "height": 600,
+        "min_width": 800,
+        "min_height": 500,
+        "position": "mouse"
+    },
+    "webkit": {
+        "plugin": true
+    }
+}

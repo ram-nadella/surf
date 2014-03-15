@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+        <title>node webkit test app</title>
+        <link rel="stylesheet" href="stylesheets/bootstrap.min.css" type="text/css" media="screen" title="no title" charset="utf-8">
+        <link rel="stylesheet" href="stylesheets/screen.css" type="text/css" media="screen" title="no title" charset="utf-8">
+        <link href="stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
+        <link href="stylesheets/nprogress.css" media="screen, projection" rel="stylesheet" type="text/css" />
+    </head>
+    <body id="index" class="container">
+        <h1 class="page-header">Test App</h1>
+
+        <div>
+            <div class="input-group">
+                <input class="form-control input-lg" type="text" name="domainName" value="www.cloudflare.com" id="domainName" placeholder="www.example.com">
+                <span class="input-group-btn">
+                    <button class="btn btn-lg btn-danger" type="button" id="surf"><span class="glyphicon glyphicon-globe"></span> Surf</button>
+                </span>
+            </div>
+        </div>
+
+        <div id="dig">
+            <h2 class="page-header">dig</h2>
+            <p class="lead">The response to a DNS query to your website</p>
+            <pre id="digOutput"></pre>
+        </div>
+
+        <div id="ns">
+            <h2 class="page-header">Name Servers</h2>
+            <p class="lead">The name servers for your domain</p>
+            <pre id="nsOutput"></pre>
+        </div>
+
+        <script type="text/javascript" charset="utf-8">
+             // require('nw.gui').Window.get().showDevTools();
+        </script>
+        <script src="js/libs/jquery-2.1.0.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="js/libs/lodash.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="js/libs/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="js/libs/nprogress.js" type="text/javascript" charset="utf-8"></script>
+        <script src="js/app.js" type="text/javascript" charset="utf-8"></script>
+    </body>
+</html>
