@@ -8,3 +8,19 @@
 #surf {
     outline: none;
 }
+
+#cloud {
+    padding: 30px;
+    font-size: 4em;
+    background: transparent;
+    color: transparent;
+    &.whiteCloud {
+        color: white;
+    }
+    &.greyCloud {
+        color: grey;
+    }
+    &.orangeCloud {
+        color: orangered;
+    }
+}

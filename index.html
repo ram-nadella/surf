@@ -8,32 +8,49 @@
         <link href="stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
         <link href="stylesheets/nprogress.css" media="screen, projection" rel="stylesheet" type="text/css" />
     </head>
-    <body id="index" class="container">
-        <h1 class="page-header">Surf</h1>
+    <body id="index">
+        <h1 class="page-header"></h1>
 
-        <div>
+        <div id="input" class="container">
             <div class="input-group">
-                <input class="form-control input-lg" type="text" name="domainName" value="www.cloudflare.com" id="domainName" placeholder="www.example.com">
+                <input class="form-control input-lg" type="text" name="domainInput" value="www.cloudflare.com" id="domainInput" placeholder="www.example.com">
                 <span class="input-group-btn">
                     <button class="btn btn-lg btn-danger" type="button" id="surf"><span class="glyphicon glyphicon-globe"></span> Surf</button>
                 </span>
             </div>
         </div>
 
-        <div id="dig">
+        <div id="cloud" class="container text-center">
+            <span class="glyphicon glyphicon-cloud">&nbsp</span>
+        </div>
+
+        <div id="http" class="container">
+            <h2 class="page-header">HTTP</h2>
+            <p class="lead">Headers and other information</p>
+            <pre id="httpHeaders"></pre>
+            <!-- <pre id="cfFeatures"></pre> -->
+        </div>
+
+        <div id="dig" class="container">
             <h2 class="page-header">dig</h2>
             <p class="lead">The response to a DNS query to your website</p>
             <pre id="digOutput"></pre>
         </div>
 
-        <div id="ns">
+        <div id="ns" class="container">
             <h2 class="page-header">Name Servers</h2>
             <p class="lead">The name servers for your domain</p>
             <pre id="nsOutput"></pre>
         </div>
 
+        <div id="whois" class="container">
+            <h2 class="page-header">IP whois</h2>
+            <p class="lead">WHOIS info of the IP the domain points to</p>
+            <pre id="whoisOutput"></pre>
+        </div>
+
         <script type="text/javascript" charset="utf-8">
-             // require('nw.gui').Window.get().showDevTools();
+             require('nw.gui').Window.get().showDevTools();
         </script>
         <script src="js/libs/jquery-2.1.0.min.js" type="text/javascript" charset="utf-8"></script>
         <script src="js/libs/lodash.min.js" type="text/javascript" charset="utf-8"></script>

@@ -6,3 +6,23 @@
 #surf {
   outline: none;
 }
+
+/* line 12, ../sass/screen.scss */
+#cloud {
+  padding: 30px;
+  font-size: 4em;
+  background: transparent;
+  color: transparent;
+}
+/* line 17, ../sass/screen.scss */
+#cloud.whiteCloud {
+  color: white;
+}
+/* line 20, ../sass/screen.scss */
+#cloud.greyCloud {
+  color: grey;
+}
+/* line 23, ../sass/screen.scss */
+#cloud.orangeCloud {
+  color: orangered;
+}

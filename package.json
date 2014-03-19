@@ -16,5 +16,8 @@
     },
     "webkit": {
         "plugin": true
+    },
+    "dependencies": {
+        "cheerio": "~0.13.1"
     }
 }
